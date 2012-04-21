@@ -54,7 +54,7 @@ public class FirstQS  {
 	public static void main(String[] args) {
 		ArrayList<String> list = new ArrayList<String>();
 		try {
-			//测试数据：QuickSort 2array0
+			
 			File file = new File("E:/PRO/Java/Data/QuickSort.txt");
 			if (!file.exists()) {
 				file.createNewFile();
@@ -75,7 +75,7 @@ public class FirstQS  {
 			array[i] = Integer.parseInt(list.get(i));
 		}		
 		quickSort(array,0,array.length-1);
-		System.out.println("\nfirst比较次数:"+coutingFirst);
+		System.out.println("\nfirst锟饺较达拷锟斤拷:"+coutingFirst);
 		
 	}
 }
