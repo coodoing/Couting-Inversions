@@ -15,9 +15,8 @@ public class ArrayTrans {
 	}
 
 	private static int[] transform2(int[] a, int[] b) {
-		// S=A(0)*A(1)*A(2)……*A(N)
+		// S=A(0)*A(1)*A(2)****A(N)
 		// B(I)=10lgS-lgA(I)
-		// java中math.pow函數有一定的誤差
 		int i;
 		b[0] = 1;
 		for (i = 0; i < a.length; i++)
@@ -32,21 +31,10 @@ public class ArrayTrans {
 
 	public static void main(String[] args) {
 		int[] array = new int[] { 1, 2, 3, 4, 5 };
-		System.out.println("数组转换前：");
 		for (int i = 0; i < array.length; i++)
 			System.out.print(array[i] + " ");
-
-		
-		 /*int[] result = new int[array.length]; 
-		 result = transform(array,result); 
-		 System.out.println("\n方法1数组转换后："); 
-		 for(int i =0;i<result.length;i++) 
-			 System.out.print(result[i]+" ");*/
-		 
-
 		int[] result2 = new int[array.length];
 		result2 = transform2(array, result2);
-		System.out.println("\n方法2数组转换后：");
 		for (int i = 0; i < result2.length; i++)
 			System.out.print(result2[i] + " ");
 
