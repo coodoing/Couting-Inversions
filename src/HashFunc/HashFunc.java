@@ -44,12 +44,7 @@ public class HashFunc {
 		for (int i = 0; i < ARRAY_NUM; i++) {
 			array[i] = Integer.parseInt(list.get(i));
 		}
-		/*for (int i = 0; i < list.size(); i++) {
-			System.out.print(array[i] + "   ");
-		}	
-		for (int i = 0; i < 9; i++) {
-			System.out.print(sum[i] + "   ");
-		}*/
+
 		for (int m = 0; m < sum.length; m++) {
 			for (int n = 0; n < list.size(); n++) {
 				int x = sum[m] - array[n];				
