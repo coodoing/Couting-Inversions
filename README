@@ -3,24 +3,21 @@ The task is to find the number of inversions in a given array.
 
 Define the number of inversion
     i, j form an inversion if a_i > a_j, that is, if the two elements a_i and a_j are "out of order".
-
 Comparing two rankings is counting the number of  inversion in the sequence a_1.. a_n.
 Example
 before sort:   2 4 1 3 5
 after sort:    1 2 3 4 5
-
 The sequence 2, 4, 1, 3, 5 has three inversions (2,1), (4,1), (4,3)
 
 Here is a example, you can just use this testdata for you to test the correctness of your algorithm 
 given a array:[1,2,5,6,4,9,8,3,7,0]
 the inversion number of this array is: 19
 
+
 There are still some introductions about the couting inversions:
 the theory of couting inversions:
 http://www.cp.eng.chula.ac.th/~piak/teaching/algo/algo2008/count-inv.htm
-
 some details about count inversions:
 http://stackoverflow.com/questions/337664/counting-inversions-in-an-array
-
 introduction to algorithms:
 http://stackoverflow.com/questions/7804681/the-expected-number-of-inversions-from-introduction-to-algorithms-by-cormen
