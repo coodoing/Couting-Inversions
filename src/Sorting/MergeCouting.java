@@ -68,13 +68,13 @@ public class MergeCouting {
 		} catch (Exception ex) {
 		}
 
-		System.out.println("列表长度"+list.size());
-		System.out.println("int型的最大整数值："+Integer.MAX_VALUE);
+		System.out.println("length of the list:"+list.size());)
+		System.out.println("max number of int"+Integer.MAX_VALUE);
 
 		int[] array = new int[list.size()];
 		for (int i = 0; i < list.size(); i++) {
 			array[i] = Integer.parseInt(list.get(i));
 		}
-		System.out.println("number of inversions："+invCount(array));
+		System.out.println("number of couting inversions" +invCount(array));
 	}
 }
