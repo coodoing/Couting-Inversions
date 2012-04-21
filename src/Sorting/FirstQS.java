@@ -75,7 +75,7 @@ public class FirstQS  {
 			array[i] = Integer.parseInt(list.get(i));
 		}		
 		quickSort(array,0,array.length-1);
-		System.out.println("\nfirst�Ƚϴ���:"+coutingFirst);
+		System.out.println("\nfirst comparisions"+coutingFirst);
 		
 	}
 }
