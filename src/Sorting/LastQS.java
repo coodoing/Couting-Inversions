@@ -77,6 +77,6 @@ public class LastQS {
 		}
 		
 		quickSort2(array,0,array.length-1);
-		System.out.println("\nlast�Ƚϴ���:"+coutingLast);		
+		System.out.println("\nlast"+coutingLast);		
 	}
 }
