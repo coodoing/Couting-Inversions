@@ -52,13 +52,10 @@ public class LastQS {
 	}
 	
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		ArrayList<String> list = new ArrayList<String>();
 		try {
-			//测试数据：QuickSort 2array0
+	
 			File file = new File("E:/PRO/Java/Data/QuickSort.txt");
 			if (!file.exists()) {
 				file.createNewFile();
@@ -80,6 +77,6 @@ public class LastQS {
 		}
 		
 		quickSort2(array,0,array.length-1);
-		System.out.println("\nlast比较次数:"+coutingLast);		
+		System.out.println("\nlast锟饺较达拷锟斤拷:"+coutingLast);		
 	}
 }
