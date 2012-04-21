@@ -9,15 +9,9 @@ public class MedianQS  {
 	
 	static int middlePartition(int[] arr,int l, int r)
 	{
-		int middle = chooseMiddle(arr,l,r);		
-		//System.out.println("middle位置"+arr[middle]);
+		int middle = chooseMiddle(arr,l,r);	
 		int median = med3(arr,l,middle,r);
-		//System.out.println("中位数的值:"+arr[median]);
-		swap(arr,l,median);
-		/*System.out.println("交换后的数组为:");
-		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i]+" ");			
-		}*/
+		swap(arr,l,median);		
 		int pivot = arr[l];
 		int i = l+1;
 		int j = l+1;
@@ -67,13 +61,10 @@ public class MedianQS  {
 		}
 	}
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {		
 		ArrayList<String> list = new ArrayList<String>();
 		try {
-			//测试数据：QuickSort 2array0
+		
 			File file = new File("E:/PRO/Java/Data/QuickSort.txt");
 			if (!file.exists()) {
 				file.createNewFile();
@@ -93,12 +84,8 @@ public class MedianQS  {
 		for (int i = 0; i < list.size(); i++) {
 			array[i] = Integer.parseInt(list.get(i));
 		}			
-		//System.out.println(middlePartition(array,0,array.length-1));
 		quickSort3(array,0,array.length-1);
-		/*for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i]+" ");			
-		}*/
-		System.out.println("\nmiddle比较次数:"+coutingMiddle);
+		System.out.println("\nmiddle"+coutingMiddle);
 
 	}
 }
