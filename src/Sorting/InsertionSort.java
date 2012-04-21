@@ -13,7 +13,7 @@ public class InsertionSort {
 	}	
 	
 	static void insert(int[] a, int n, int x) {
-		//元素插入数组a[0:n-1]
+		
 		int i;
 		for(i=n-1;i>=0&&x<a[i];i--)
 		{
@@ -24,15 +24,12 @@ public class InsertionSort {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] a = new int[]{4,5,6,8,2,9,1,3,7};
-		System.out.println("插入排序前");
 		for(int i =0;i<a.length;i++)
 		{
 			System.out.print(a[i]+" ");
 		}
 		insertSort(a,a.length);
-		System.out.println("\n插入排序后");
 		for(int i =0;i<a.length;i++)
 		{
 			System.out.print(a[i]+" ");
